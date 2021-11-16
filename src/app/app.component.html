@@ -1,0 +1,10 @@
+<h1>Reactive Forms</h1>
+
+<nav>
+  <a (click)="toggleEditor('profile')">个人信息</a>
+  <a (click)="toggleEditor('name')">姓名测试</a>
+</nav>
+
+<app-name-editor *ngIf="showNameEditor"></app-name-editor>
+
+<app-profile-editor *ngIf="showProfileEditor"></app-profile-editor>
